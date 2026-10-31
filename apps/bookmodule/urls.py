@@ -25,3 +25,8 @@ urlpatterns += [
 urlpatterns += [
     path('html5/tables/', views.tables_view, name='books.html5_tables'),
 ]
+
+# Lab 9 - Task 6
+urlpatterns += [
+    path('lab9/task6', views.lab9_task6, name='lab9_task6'),
+]

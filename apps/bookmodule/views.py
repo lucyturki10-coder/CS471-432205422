@@ -36,3 +36,26 @@ def listing_view(request):
 # Lab 5 - Task 4
 def tables_view(request):
     return render(request, 'bookmodule/tables.html')
+
+
+# Lab 9 - Task 6
+def lab9_task6(request):
+    from django.db.models import Count, Q
+    from .models import Publisher
+
+    publishers = Publisher.objects.annotate(
+        book_count=Count(
+            'book',
+            filter=Q(
+                book__price__gt=50,
+                book__quantity__gte=1,
+                book__quantity__lt=5,
+            ),
+        )
+    ).order_by('id')
+
+    return render(
+        request,
+        'bookmodule/lab9_task6.html',
+        {'publishers': publishers},
+    )
