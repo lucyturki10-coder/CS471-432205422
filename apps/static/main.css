@@ -1,0 +1,88 @@
+/* Lab 5 - Task 1 */
+.link-block {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+
+.green-link {
+    background-color: lightgreen;
+    color: red;
+}
+
+.green-link:visited {
+    color: darkred;
+}
+
+.gray-link {
+    background-color: #666666;
+    color: yellow;
+}
+
+.gray-link:visited {
+    color: gold;
+}
+
+#black-link {
+    background-color: black;
+    color: white;
+}
+
+#black-link:visited {
+    color: lightgray;
+}
+
+.link-block:hover {
+    background-color: lightblue;
+    color: navy;
+}
+
+.link-block:active {
+    background-color: orange;
+    color: black;
+}
+
+/* Lab 5 - Task 2 */
+.formatting-heading {
+    background-color: #f5f5dc;
+    color: green;
+    padding: 10px 15px;
+    font-family: serif;
+}
+
+/* Lab 5 - Task 3 */
+.listing-heading {
+    background-color: #4b8b95;
+    color: white;
+    padding: 15px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Lab 5 - Task 4 */
+.lab5-table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.lab5-table th,
+.lab5-table td {
+    border: 1px solid black;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+.lab5-table caption {
+    margin-bottom: 8px;
+}
+
+.lab5-table img {
+    display: block;
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+}

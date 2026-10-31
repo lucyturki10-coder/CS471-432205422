@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Links and Layout Customization</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+</head>
+<body>
+    <a href="https://www.qu.edu.sa" target="_blank"
+       rel="noopener noreferrer" class="link-block green-link">
+        Go to QU website (open a new tab)
+    </a>
+
+    <a href="https://www.qu.edu.sa" class="link-block gray-link">
+        Go to QU website (open in the same page/tab)
+    </a>
+
+    <a href="https://www.qu.edu.sa" class="link-block" id="black-link">
+        Go to QU website (open in the same page/tab)
+    </a>
+</body>
+</html>
